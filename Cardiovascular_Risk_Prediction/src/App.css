@@ -1,0 +1,95 @@
+/* Full background color for the entire page with dual gradient */
+body {
+  background: linear-gradient(135deg, #07f8ce, #026f5f); /* Aqua and dark teal gradient */
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #ffffff; /* Default text color for readability */
+}
+
+/* Container for centering the form */
+.container {
+  max-width: 600px;
+  margin: 5rem auto; /* Center container vertically with space around it */
+  padding: 2rem;
+}
+
+/* Form container with solid red background */
+.form-container {
+  background-color: #fb0432; /* Bright red background for the form */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 600px;
+  color: #ffffff; /* White text for contrast */
+}
+
+/* Form header styling */
+.form-header {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+  color: #ffffff; /* White text for form header */
+}
+
+/* Section transition animations */
+.form-section {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0; /* Start invisible */
+}
+
+.form-section.visible {
+  opacity: 1; /* Become visible when active */
+}
+
+.fade-in {
+  animation: fadeIn 0.5s forwards;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Section header and label styles */
+.form-section-header {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #ffffff; /* White text for section headers */
+}
+
+.form-label {
+  color: #ffffff; /* White text color for form labels */
+}
+
+/* Button animations */
+.animated-button {
+  transition: transform 0.2s;
+}
+
+.animated-button:hover {
+  transform: scale(1.05);
+}
+
+/* Prediction result styling */
+.prediction-result h3 {
+  color: #ffffff; /* White text for prediction result */
+}
